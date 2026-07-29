@@ -1,0 +1,338 @@
+
+
+<html>
+
+<head>
+
+<title>
+Seattle Seahawks Defensive Scouting Report
+</title>
+
+
+<style>
+
+body {
+
+font-family: Arial, sans-serif;
+
+margin: 40px;
+
+line-height: 1.6;
+
+}
+
+
+h1 {
+
+color: #002244;
+
+}
+
+
+h2 {
+
+color: #005a9c;
+
+}
+
+
+.card {
+
+background:#f5f5f5;
+
+padding:20px;
+
+border-radius:10px;
+
+margin-bottom:20px;
+
+}
+
+
+table {
+
+border-collapse: collapse;
+
+width:100%;
+
+}
+
+
+td, th {
+
+border:1px solid #ddd;
+
+padding:8px;
+
+}
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+<h1>
+Seattle Seahawks Defensive Scouting Report
+</h1>
+
+
+<div class="card">
+
+<h2>
+Executive Summary
+</h2>
+
+
+<p>
+
+This analysis evaluates the Seattle Seahawks defense using NFL
+play-by-play data. The objective is to identify defensive tendencies,
+coverage vulnerabilities, and offensive concepts that generate the
+largest expected point advantage against Seattle.
+
+The model evaluates route concepts against defensive coverage types
+using Expected Points Added (EPA), Success Rate, and sample size.
+
+</p>
+
+
+</div>
+
+
+
+<h2>
+Key Findings
+</h2>
+
+
+<div class="card">
+
+
+<h3>
+1. Attack Cover 3 with Vertical Route Concepts
+</h3>
+
+
+<p>
+
+Seattle has shown vulnerability against corner and post routes
+when operating Cover 3 defensive structures.
+
+Corner routes against Cover 3 generated one of the strongest
+offensive outcomes in the dataset, suggesting opportunities
+to attack the outside intermediate areas of the field.
+
+Recommended concepts:
+
+<ul>
+
+<li>Play-action flood concepts</li>
+
+<li>Corner routes</li>
+
+<li>Deep crossers</li>
+
+<li>Post routes</li>
+
+</ul>
+
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+
+<h3>
+2. Attack the Middle of the Field Against Cover 2
+</h3>
+
+
+<p>
+
+Against Cover 2 coverage, post routes produced strong EPA results.
+The weakness of Cover 2 is the space between the two safeties
+and behind the linebackers.
+
+Recommended concepts:
+
+<ul>
+
+<li>Posts</li>
+
+<li>Seams</li>
+
+<li>Intermediate crossers</li>
+
+</ul>
+
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+
+<h3>
+3. Avoid Living on Short Timing Routes
+</h3>
+
+
+<p>
+
+Seattle has been effective at limiting lower-risk concepts such as
+hitches and curls. These plays produce limited explosive value
+and allow the defense to remain structurally sound.
+
+The Patriots should prioritize creating explosive opportunities
+rather than relying heavily on underneath throws.
+
+</p>
+
+
+</div>
+
+
+
+
+<h2>
+Seattle Route vs Coverage EPA Matrix
+</h2>
+
+
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-2.9.0.min.js"></script>                <div id="9204ebfa-ee64-4978-8bfa-b60289a82010" class="plotly-graph-div" style="height:700px; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("9204ebfa-ee64-4978-8bfa-b60289a82010")) {                    Plotly.newPlot(                        "9204ebfa-ee64-4978-8bfa-b60289a82010",                        [{"coloraxis":"coloraxis","histfunc":"sum","hovertemplate":"route=%{x}<br>defense_coverage_type=%{y}<br>sum of Avg_EPA=%{z}<extra></extra>","name":"","texttemplate":"%{z:.2f}","x":["","","","","","","","","CORNER","CORNER","CORNER","DEEP OUT","DEEP OUT","DEEP OUT","DEEP OUT","GO","GO","GO","GO","HITCH/CURL","HITCH/CURL","HITCH/CURL","HITCH/CURL","HITCH/CURL","HITCH/CURL","IN/DIG","IN/DIG","IN/DIG","IN/DIG","POST","POST","POST","QUICK OUT","QUICK OUT","QUICK OUT","QUICK OUT","QUICK OUT","QUICK OUT","QUICK OUT","QUICK OUT","SCREEN","SCREEN","SCREEN","SHALLOW CROSS/DRAG","SHALLOW CROSS/DRAG","SHALLOW CROSS/DRAG","SHALLOW CROSS/DRAG","SLANT","SLANT","SLANT","SLANT","SWING","SWING","SWING"],"xaxis":"x","xbingroup":"x","y":["2_MAN","COVER_1","COVER_2","COVER_3","COVER_4","COVER_6","COVER_9","Unknown","COVER_1","COVER_2","COVER_3","COVER_1","COVER_2","COVER_3","COVER_6","2_MAN","COVER_1","COVER_2","COVER_3","2_MAN","COVER_1","COVER_2","COVER_3","COVER_4","COVER_6","COVER_1","COVER_2","COVER_3","COVER_4","COVER_1","COVER_2","COVER_3","2_MAN","COVER_0","COVER_1","COVER_2","COVER_3","COVER_4","COVER_6","COVER_9","COVER_1","COVER_2","COVER_3","2_MAN","COVER_1","COVER_2","COVER_3","COVER_1","COVER_2","COVER_3","COVER_4","COVER_1","COVER_2","COVER_3"],"yaxis":"y","ybingroup":"y","z":[-1.057875633239746,-0.6577551960945129,-0.5515547394752502,-1.0475338697433472,-1.1617727279663086,-0.5721731185913086,-1.4136345386505127,-0.19588316977024078,-0.6821057200431824,-0.45860394835472107,1.7028692960739136,0.5033857822418213,0.37681615352630615,-0.36373674869537354,0.7303946614265442,-0.8478381633758545,-0.31755244731903076,0.6780065298080444,0.2534415125846863,-0.5416758060455322,-0.1391984522342682,0.16417771577835083,0.24337138235569,-0.09590873122215271,-0.13958120346069336,0.07728315889835358,0.06011749431490898,-0.19072596728801727,0.02903890609741211,0.39059919118881226,1.0985534191131592,1.2100846767425537,-0.23152483999729156,0.3207157254219055,0.14147676527500153,0.06745539605617523,-0.26005831360816956,-0.19567634165287018,0.24840311706066132,-1.523320198059082,0.1456887423992157,-0.058362580835819244,0.09574499726295471,0.26836204528808594,0.49151575565338135,-0.04936237633228302,-0.6862781047821045,-0.44588327407836914,0.9091253280639648,-0.5636254549026489,0.6696372032165527,-0.47542548179626465,0.14479868113994598,0.011056391522288322],"type":"histogram2d"}],                        {"template":{"data":{"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"#E5ECF6","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Offensive Route Concept"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Seattle Coverage"}},"coloraxis":{"colorbar":{"title":{"text":"sum of Avg_EPA"}},"colorscale":[[0.0,"rgb(165,0,38)"],[0.1,"rgb(215,48,39)"],[0.2,"rgb(244,109,67)"],[0.3,"rgb(253,174,97)"],[0.4,"rgb(254,224,139)"],[0.5,"rgb(255,255,191)"],[0.6,"rgb(217,239,139)"],[0.7,"rgb(166,217,106)"],[0.8,"rgb(102,189,99)"],[0.9,"rgb(26,152,80)"],[1.0,"rgb(0,104,55)"]]},"legend":{"tracegroupgap":0},"title":{"text":"Seattle Seahawks Defensive Vulnerabilities<br>EPA Allowed by Route Concept and Coverage","x":0.5},"height":700},                        {"responsive": true}                    )                };                            </script>        </div>
+
+
+
+
+<h2>
+Recommended Patriots Offensive Strategy
+</h2>
+
+
+<table>
+
+
+<tr>
+
+<th>
+Situation
+</th>
+
+<th>
+Recommended Attack
+</th>
+
+</tr>
+
+
+<tr>
+
+<td>
+Seattle Cover 3
+</td>
+
+<td>
+Play-action, corner routes, posts, flood concepts
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Seattle Cover 2
+</td>
+
+<td>
+Attack middle field with posts and seams
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Seattle Man Coverage
+</td>
+
+<td>
+Motion, slants, crossers, pick concepts
+</td>
+
+</tr>
+
+
+</table>
+
+
+
+
+<h2>
+Methodology
+</h2>
+
+
+<p>
+
+Data source: NFL play-by-play data.
+
+Each play was evaluated using:
+
+<ul>
+
+<li>
+Expected Points Added (EPA)
+</li>
+
+<li>
+Success Rate
+</li>
+
+<li>
+Route Concept
+</li>
+
+<li>
+Defensive Coverage Type
+</li>
+
+<li>
+Down and Distance
+</li>
+
+</ul>
+
+
+EPA measures how much a play changes the offense's expected scoring
+value compared to the situation before the play.
+
+Higher EPA indicates a more valuable offensive outcome.
+
+</p>
+
+
+
+</body>
+
+</html>
+
