@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NFL Analytics Portfolio | Nathan K</title>
+
+    <style>
+
+        body{
+            margin:0;
+            font-family:Arial, Helvetica, sans-serif;
+            background:#f4f7fb;
+            color:#222;
+        }
+
+        header{
+            background:#002244;
+            color:white;
+            padding:60px;
+            text-align:center;
+        }
+
+        header h1{
+            margin-bottom:10px;
+            font-size:48px;
+        }
+
+        header p{
+            font-size:20px;
+            max-width:900px;
+            margin:auto;
+            line-height:1.7;
+        }
+
+        .container{
+            width:90%;
+            max-width:1200px;
+            margin:auto;
+            padding:40px 0;
+        }
+
+        h2{
+            color:#002244;
+            margin-top:40px;
+        }
+
+        .grid{
+
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+            gap:25px;
+
+        }
+
+        .card{
+
+            background:white;
+            border-radius:12px;
+            padding:25px;
+
+            box-shadow:0px 5px 15px rgba(0,0,0,.08);
+
+            transition:.25s;
+
+        }
+
+        .card:hover{
+
+            transform:translateY(-5px);
+
+        }
+
+        .card h3{
+
+            color:#005A9C;
+
+        }
+
+        .button{
+
+            display:inline-block;
+
+            margin-top:15px;
+
+            background:#005A9C;
+
+            color:white;
+
+            padding:12px 22px;
+
+            border-radius:8px;
+
+            text-decoration:none;
+
+            font-weight:bold;
+
+        }
+
+        .button:hover{
+
+            background:#003d6b;
+
+        }
+
+        footer{
+
+            background:#002244;
+
+            color:white;
+
+            text-align:center;
+
+            padding:30px;
+
+            margin-top:60px;
+
+        }
+
+        table{
+
+            width:100%;
+
+            border-collapse:collapse;
+
+        }
+
+        td,th{
+
+            padding:12px;
+
+            border-bottom:1px solid #ddd;
+
+        }
+
+        tr:hover{
+
+            background:#f2f2f2;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🏈 NFL Analytics Portfolio</h1>
+
+<p>
+
+Welcome to my football analytics portfolio.
+
+This repository contains machine learning models, interactive visualizations,
+and opponent scouting reports built using NFL play-by-play data from nflverse.
+
+The objective is to build decision-support tools similar to those used by
+NFL front offices and coaching staffs to improve game planning,
+self-scouting, and strategic decision making.
+
+</p>
+
+</header>
+
+<div class="container">
+
+<h2>Interactive Reports</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Seattle Seahawks Defensive Scouting Report</h3>
+
+<p>
+
+Comprehensive defensive scouting report identifying Seattle's
+coverage tendencies, defensive strengths, weaknesses,
+and offensive concepts that generate the highest Expected Points Added (EPA).
+
+</p>
+
+<a class="button"
+href="reports/Seattle_Defensive_Scouting_Report.html">
+
+Open Report
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>NFL Team Efficiency Map</h3>
+
+<p>
+
+Interactive PCA visualization comparing every NFL team
+using offensive and defensive efficiency metrics.
+This model clusters similar teams together and identifies
+league-wide performance trends.
+
+</p>
+
+<a class="button"
+href="reports/NFL_Team_Efficiency_Map.html">
+
+Open Visualization
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>Explosive Play Profile</h3>
+
+<p>
+
+Interactive analysis of which offenses consistently generate
+explosive plays and which defenses successfully prevent them.
+
+</p>
+
+<a class="button"
+href="reports/NFL_Explosive_Play_Profile.html">
+
+Open Visualization
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>NFL Team Identity Model</h3>
+
+<p>
+
+Machine learning visualization identifying each team's offensive
+identity using EPA, rushing efficiency, passing efficiency,
+explosive plays, and success rate.
+
+</p>
+
+<a class="button"
+href="reports/NFL_TEAM_IDENTIFY.html">
+
+Open Visualization
+
+</a>
+
+</div>
+
+</div>
+
+<h2>Project Objectives</h2>
+
+<table>
+
+<tr>
+
+<th>Objective</th>
+
+<th>Description</th>
+
+</tr>
+
+<tr>
+
+<td>Opponent Scouting</td>
+
+<td>
+
+Identify defensive tendencies, offensive strengths,
+and exploitable weaknesses for upcoming opponents.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>League Comparison</td>
+
+<td>
+
+Compare every NFL team using advanced efficiency metrics
+instead of traditional box score statistics.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Machine Learning</td>
+
+<td>
+
+Apply statistical learning techniques including PCA,
+predictive modeling, clustering,
+and exploratory data analysis.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Decision Support</td>
+
+<td>
+
+Translate complex football data into actionable
+coaching recommendations.
+
+</td>
+
+</tr>
+
+</table>
+
+<h2>Technology Stack</h2>
+
+<ul>
+
+<li>Python</li>
+
+<li>Pandas</li>
+
+<li>NumPy</li>
+
+<li>Scikit-Learn</li>
+
+<li>Plotly</li>
+
+<li>Matplotlib</li>
+
+<li>NFLverse Play-by-Play Data</li>
+
+<li>Git & GitHub</li>
+
+</ul>
+
+<h2>Future Projects</h2>
+
+<ul>
+
+<li>Opponent-specific scouting reports for every Patriots opponent</li>
+
+<li>Fourth-down decision model</li>
+
+<li>Coverage tendency prediction model</li>
+
+<li>Route attack recommendation engine</li>
+
+<li>Pressure package effectiveness model</li>
+
+<li>Red zone efficiency dashboard</li>
+
+<li>Win probability simulator</li>
+
+<li>Player similarity model</li>
+
+</ul>
+
+</div>
+
+<footer>
+
+<h3>Nathan K</h3>
+
+<p>
+
+Data Engineer | Sports Analytics | Machine Learning | NFL Decision Science
+
+</p>
+
+<p>
+
+Built using Python, Plotly, Scikit-Learn, and NFLverse play-by-play data.
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
