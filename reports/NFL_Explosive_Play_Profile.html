@@ -1,18 +1,269 @@
 
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>NFL Explosive Play Profile</title>
+
+<style>
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin:40px;
+    line-height:1.7;
+    background:#fafafa;
+}
+
+h1 {
+    color:#013369;
+}
+
+h2 {
+    color:#013369;
+    border-bottom:2px solid #ddd;
+    padding-bottom:6px;
+}
+
+.card {
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    margin-bottom:25px;
+    box-shadow:0px 2px 8px rgba(0,0,0,.08);
+}
+
+table {
+    border-collapse:collapse;
+    width:100%;
+}
+
+td, th {
+    border:1px solid #ddd;
+    padding:10px;
+}
+
+th {
+    background:#013369;
+    color:white;
+}
+
+</style>
+
+</head>
 
 <body>
 
 <h1>NFL Explosive Play Profile</h1>
 
+<div class="card">
+
+<h2>Executive Summary</h2>
+
 <p>
-This visualization compares NFL teams based on their ability to create and
-prevent explosive plays.
+
+Explosive plays are among the strongest predictors of offensive success in the
+NFL. Teams that consistently generate chunk gains force defenses to become more
+aggressive, while defenses that eliminate explosive plays generally rank among
+the league's most efficient units.
+
+This report evaluates every NFL team using play-by-play data from the 2025
+season to compare each team's ability to create explosive offensive plays and
+prevent explosive gains on defense.
+
+Rather than evaluating total offensive production alone, this analysis focuses
+on how frequently teams create high-impact plays capable of rapidly changing
+field position and scoring probability.
+
 </p>
 
+</div>
+
+<div class="card">
+
+<h2>How Explosive Plays are Defined</h2>
+
+<p>
+
+For this project an explosive play is defined as:
+
+</p>
+
+<ul>
+
+<li><b>Run:</b> 10 or more yards</li>
+
+<li><b>Pass:</b> 20 or more yards</li>
+
+</ul>
+
+<p>
+
+These thresholds are widely used throughout football analytics because they
+identify plays that dramatically improve expected scoring opportunity.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Metrics Included</h2>
+
+<table>
+
+<tr>
+
+<th>Metric</th>
+
+<th>Description</th>
+
+</tr>
+
+<tr>
+
+<td>Explosive Play Rate</td>
+
+<td>Percentage of offensive plays that become explosive gains.</td>
+
+</tr>
+
+<tr>
+
+<td>Explosive Plays Allowed</td>
+
+<td>Percentage of defensive snaps where an opponent records an explosive play.</td>
+
+</tr>
+
+<tr>
+
+<td>EPA per Play</td>
+
+<td>Average Expected Points Added generated on each offensive snap.</td>
+
+</tr>
+
+<tr>
+
+<td>Success Rate</td>
+
+<td>Percentage of plays that achieve positive expected value based on down and distance.</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>How to Interpret the Visualization</h2>
+
+<p>
+
+Each point represents one NFL team.
+
+</p>
+
+<ul>
+
+<li><b>Teams positioned farther right</b> generate explosive plays more frequently.</li>
+
+<li><b>Teams positioned higher</b> are generally more efficient offensively.</li>
+
+<li><b>Teams in the upper-right quadrant</b> combine explosive playmaking with consistent efficiency and are typically among the league's strongest offenses.</li>
+
+<li><b>Teams in the lower-left quadrant</b> struggle to create explosive gains and often rely on long, mistake-free drives.</li>
+
+</ul>
+
+<p>
+
+When comparing opponents, this visualization quickly identifies which offenses
+depend on explosive plays versus those that rely on sustained execution.
+
+</p>
+
+</div>
+
+<h2>League Explosive Play Visualization</h2>
 
 <div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script src="https://cdn.plot.ly/plotly-2.9.0.min.js"></script>                <div id="c81e739c-56b7-41e6-9fbe-4e7a36f03ad6" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("c81e739c-56b7-41e6-9fbe-4e7a36f03ad6")) {                    Plotly.newPlot(                        "c81e739c-56b7-41e6-9fbe-4e7a36f03ad6",                        [{"customdata":[[-0.018504273146390915,0.08844166994094849,0.4301675856113434],[-0.021369285881519318,-0.003738595172762871,0.43725869059562683],[0.03395644575357437,0.024138346314430237,0.44560670852661133],[0.13757604360580444,-0.010996769182384014,0.4862842857837677],[-0.04132886976003647,0.07043242454528809,0.43059489130973816],[0.07362092286348343,0.03136878088116646,0.45418328046798706],[-0.008453731425106525,0.1298174262046814,0.45471876859664917],[-0.1902279406785965,-0.09583888202905655,0.34533074498176575],[0.09696787595748901,0.16738784313201904,0.46600180864334106],[0.03135816007852554,-0.07925835996866226,0.4339151978492737],[0.08127840608358383,-0.009908508509397507,0.4523809552192688],[0.12163466960191727,0.038167569786310196,0.4750705659389496],[-0.030741628259420395,-0.16072304546833038,0.41200658679008484],[0.07212120294570923,0.004268322139978409,0.462907999753952],[0.030358603224158287,-0.0861680805683136,0.44720497727394104],[0.034882910549640656,-0.020259056240320206,0.44465649127960205],[0.14452609419822693,-0.04674947261810303,0.5071428418159485],[-0.03543496131896973,-0.07895395904779434,0.4310798943042755],[-0.2153598964214325,0.02425800822675228,0.3757961690425873],[-0.016815703362226486,0.08820651471614838,0.41932058334350586],[-0.11549917608499527,-0.0994587317109108,0.4262990355491638],[0.08956608921289444,-0.09092342853546143,0.4617205858230591],[-0.08805277943611145,-0.05905982851982117,0.4201127886772156],[0.012329891324043274,0.08739448338747025,0.42075997591018677],[-0.1265057921409607,0.1472204029560089,0.40733399987220764],[0.021315274760127068,-0.06999975442886353,0.4311152696609497],[-0.006228398997336626,0.021710777655243874,0.4312015473842621],[0.04479649290442467,-0.12392894923686981,0.4599156081676483],[0.061053138226270676,0.06986309587955475,0.4762711822986603],[-0.008881179615855217,0.013278528116643429,0.42347419261932373],[-0.15966877341270447,0.10042080283164978,0.3738693594932556],[0.005409070756286383,0.14248664677143097,0.45603272318840027]],"hovertemplate":"Offensive_Explosive_Rate=%{x}<br>Explosive_Defense_Score=%{y}<br>Team=%{text}<br>Offensive_EPA=%{customdata[0]}<br>Defensive_EPA=%{customdata[1]}<br>Offensive_Success=%{customdata[2]}<extra></extra>","legendgroup":"","marker":{"color":"#636efa","symbol":"circle","size":14},"mode":"markers+text","name":"","orientation":"v","showlegend":false,"text":["ARI","ATL","BAL","BUF","CAR","CHI","CIN","CLE","DAL","DEN","DET","GB","HOU","IND","JAX","KC","LA","LAC","LV","MIA","MIN","NE","NO","NYG","NYJ","PHI","PIT","SEA","SF","TB","TEN","WAS"],"x":[0.10986964618249534,0.10424710424710425,0.11610878661087866,0.12219451371571072,0.09254013220018886,0.11553784860557768,0.09818875119161107,0.08171206225680934,0.11242067089755213,0.09725685785536159,0.12571428571428572,0.11759172154280338,0.08881578947368421,0.11770524233432245,0.10736468500443656,0.0916030534351145,0.13015873015873017,0.09833187006145742,0.07749469214437367,0.11464968152866242,0.0975609756097561,0.13101815311760062,0.08646616541353383,0.10194624652455977,0.07631318136769079,0.10028116213683223,0.0939922480620155,0.12067510548523207,0.09661016949152543,0.09483568075117371,0.08341708542713568,0.10224948875255624],"xaxis":"x","y":[-0.11585944919278253,-0.1069723018147087,-0.10780669144981413,-0.10560747663551402,-0.10009354536950421,-0.11301369863013698,-0.13140096618357489,-0.096579476861167,-0.13047711781888996,-0.07788944723618091,-0.11057692307692307,-0.08994708994708994,-0.1,-0.11353315168029064,-0.08623853211009175,-0.08904810644831115,-0.09397024275646046,-0.09940944881889764,-0.08538899430740038,-0.12007874015748031,-0.09046214355948869,-0.09380097879282219,-0.08746355685131195,-0.12112403100775193,-0.11490978157644824,-0.08742194469223907,-0.1188034188034188,-0.08346709470304976,-0.10761154855643044,-0.11414141414141414,-0.11907164480322906,-0.12126865671641791],"yaxis":"y","type":"scatter","textposition":"top center"}],                        {"template":{"data":{"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"#E5ECF6","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Offensive_Explosive_Rate"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Explosive_Defense_Score"}},"legend":{"tracegroupgap":0},"title":{"text":"2025 NFL Explosive Play Profile"},"shapes":[{"line":{"dash":"dash"},"type":"line","x0":0.10327724335314913,"x1":0.10327724335314913,"xref":"x","y0":0,"y1":1,"yref":"y domain"},{"line":{"dash":"dash"},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":-0.10416992545935128,"y1":-0.10416992545935128,"yref":"y"}],"annotations":[{"showarrow":false,"text":"NFL Average Offense","x":0.10327724335314913,"xanchor":"center","xref":"x","y":1,"yanchor":"bottom","yref":"y domain"},{"showarrow":false,"text":"NFL Average Defense","x":1,"xanchor":"left","xref":"x domain","y":-0.10416992545935128,"yanchor":"middle","yref":"y"}]},                        {"responsive": true}                    )                };                            </script>        </div>
+        <script src="https://cdn.plot.ly/plotly-2.9.0.min.js"></script>                <div id="a72f3275-93fb-4f85-a375-e714aeecfee5" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("a72f3275-93fb-4f85-a375-e714aeecfee5")) {                    Plotly.newPlot(                        "a72f3275-93fb-4f85-a375-e714aeecfee5",                        [{"customdata":[[-0.018504273146390915,0.08844166994094849,0.4301675856113434],[-0.021369285881519318,-0.003738595172762871,0.43725869059562683],[0.03395644575357437,0.024138346314430237,0.44560670852661133],[0.13757604360580444,-0.010996769182384014,0.4862842857837677],[-0.04132886976003647,0.07043242454528809,0.43059489130973816],[0.07362092286348343,0.03136878088116646,0.45418328046798706],[-0.008453731425106525,0.1298174262046814,0.45471876859664917],[-0.1902279406785965,-0.09583888202905655,0.34533074498176575],[0.09696787595748901,0.16738784313201904,0.46600180864334106],[0.03135816007852554,-0.07925835996866226,0.4339151978492737],[0.08127840608358383,-0.009908508509397507,0.4523809552192688],[0.12163466960191727,0.038167569786310196,0.4750705659389496],[-0.030741628259420395,-0.16072304546833038,0.41200658679008484],[0.07212120294570923,0.004268322139978409,0.462907999753952],[0.030358603224158287,-0.0861680805683136,0.44720497727394104],[0.034882910549640656,-0.020259056240320206,0.44465649127960205],[0.14452609419822693,-0.04674947261810303,0.5071428418159485],[-0.03543496131896973,-0.07895395904779434,0.4310798943042755],[-0.2153598964214325,0.02425800822675228,0.3757961690425873],[-0.016815703362226486,0.08820651471614838,0.41932058334350586],[-0.11549917608499527,-0.0994587317109108,0.4262990355491638],[0.08956608921289444,-0.09092342853546143,0.4617205858230591],[-0.08805277943611145,-0.05905982851982117,0.4201127886772156],[0.012329891324043274,0.08739448338747025,0.42075997591018677],[-0.1265057921409607,0.1472204029560089,0.40733399987220764],[0.021315274760127068,-0.06999975442886353,0.4311152696609497],[-0.006228398997336626,0.021710777655243874,0.4312015473842621],[0.04479649290442467,-0.12392894923686981,0.4599156081676483],[0.061053138226270676,0.06986309587955475,0.4762711822986603],[-0.008881179615855217,0.013278528116643429,0.42347419261932373],[-0.15966877341270447,0.10042080283164978,0.3738693594932556],[0.005409070756286383,0.14248664677143097,0.45603272318840027]],"hovertemplate":"Offensive_Explosive_Rate=%{x}<br>Explosive_Defense_Score=%{y}<br>Team=%{text}<br>Offensive_EPA=%{customdata[0]}<br>Defensive_EPA=%{customdata[1]}<br>Offensive_Success=%{customdata[2]}<extra></extra>","legendgroup":"","marker":{"color":"#636efa","symbol":"circle","size":14},"mode":"markers+text","name":"","orientation":"v","showlegend":false,"text":["ARI","ATL","BAL","BUF","CAR","CHI","CIN","CLE","DAL","DEN","DET","GB","HOU","IND","JAX","KC","LA","LAC","LV","MIA","MIN","NE","NO","NYG","NYJ","PHI","PIT","SEA","SF","TB","TEN","WAS"],"x":[0.10986964618249534,0.10424710424710425,0.11610878661087866,0.12219451371571072,0.09254013220018886,0.11553784860557768,0.09818875119161107,0.08171206225680934,0.11242067089755213,0.09725685785536159,0.12571428571428572,0.11759172154280338,0.08881578947368421,0.11770524233432245,0.10736468500443656,0.0916030534351145,0.13015873015873017,0.09833187006145742,0.07749469214437367,0.11464968152866242,0.0975609756097561,0.13101815311760062,0.08646616541353383,0.10194624652455977,0.07631318136769079,0.10028116213683223,0.0939922480620155,0.12067510548523207,0.09661016949152543,0.09483568075117371,0.08341708542713568,0.10224948875255624],"xaxis":"x","y":[-0.11585944919278253,-0.1069723018147087,-0.10780669144981413,-0.10560747663551402,-0.10009354536950421,-0.11301369863013698,-0.13140096618357489,-0.096579476861167,-0.13047711781888996,-0.07788944723618091,-0.11057692307692307,-0.08994708994708994,-0.1,-0.11353315168029064,-0.08623853211009175,-0.08904810644831115,-0.09397024275646046,-0.09940944881889764,-0.08538899430740038,-0.12007874015748031,-0.09046214355948869,-0.09380097879282219,-0.08746355685131195,-0.12112403100775193,-0.11490978157644824,-0.08742194469223907,-0.1188034188034188,-0.08346709470304976,-0.10761154855643044,-0.11414141414141414,-0.11907164480322906,-0.12126865671641791],"yaxis":"y","type":"scatter","textposition":"top center"}],                        {"template":{"data":{"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"#E5ECF6","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Offensive_Explosive_Rate"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Explosive_Defense_Score"}},"legend":{"tracegroupgap":0},"title":{"text":"2025 NFL Explosive Play Profile"},"shapes":[{"line":{"dash":"dash"},"type":"line","x0":0.10327724335314913,"x1":0.10327724335314913,"xref":"x","y0":0,"y1":1,"yref":"y domain"},{"line":{"dash":"dash"},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":-0.10416992545935128,"y1":-0.10416992545935128,"yref":"y"}],"annotations":[{"showarrow":false,"text":"NFL Average Offense","x":0.10327724335314913,"xanchor":"center","xref":"x","y":1,"yanchor":"bottom","yref":"y domain"},{"showarrow":false,"text":"NFL Average Defense","x":1,"xanchor":"left","xref":"x domain","y":-0.10416992545935128,"yanchor":"middle","yref":"y"}]},                        {"responsive": true}                    )                };                            </script>        </div>
+
+<div class="card">
+
+<h2>Coaching Applications</h2>
+
+<p>
+
+NFL coaching staffs can use this report during weekly game preparation to
+identify offensive identities and defensive priorities.
+
+Typical questions answered include:
+
+</p>
+
+<ul>
+
+<li>Which offenses create the most explosive passes?</li>
+
+<li>Which teams rely on explosive rushing plays?</li>
+
+<li>Which defenses consistently eliminate deep shots?</li>
+
+<li>Which opponents require additional safety help?</li>
+
+<li>Which teams force opponents into long drives?</li>
+
+<li>How aggressive should defensive play-calling be?</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Analytical Value</h2>
+
+<p>
+
+Explosive play analysis is commonly incorporated into opponent scouting because
+explosive gains disproportionately influence game outcomes. A small number of
+high-value plays can account for a significant percentage of offensive
+production over the course of a game.
+
+Combining explosive play rate with Expected Points Added (EPA) and Success Rate
+provides a more complete evaluation than traditional box score statistics,
+capturing both consistency and game-changing ability.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Methodology</h2>
+
+<ul>
+
+<li>Data Source: NFL Play-by-Play Data (2025 Season)</li>
+
+<li>Play-level analysis performed using Python</li>
+
+<li>Visualizations created with Plotly</li>
+
+<li>Metrics aggregated at the team level</li>
+
+<li>EPA calculated using expected points models from nflverse play-by-play data</li>
+
+</ul>
+
+</div>
 
 </body>
 
